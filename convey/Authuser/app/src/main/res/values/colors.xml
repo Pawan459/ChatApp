@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#022EFC</color>
+    <color name="colorAccent">#E0F2F1</color>
+
+    <array name="dot_colors">
+        <item>#03A9f4</item>
+        <item>#f22</item>
+        <item>#FFBB00</item>
+        </array>
+</resources>

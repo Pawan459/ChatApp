@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Infuse</string>
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="next">Sign In</string>
+    <string name="cencel">Cencel</string>
+    <string name="signup">SIGNUP</string>
+    <string name="reg">New to_____? Register here.</string>
+    <string name="phone">Phone Number</string>
+</resources>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.Fragments.UsersFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:id="@+id/search"
+        android:hint="Search Users"
+        
+        android:drawableLeft="@drawable/ic_action_person"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+</RelativeLayout>

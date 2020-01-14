@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3f0f2"
+    tools:context=".MessageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Username"
+                android:fontFamily="serif-monospace"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/username"/>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/app_bar"
+        android:layout_above="@+id/bottom"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:padding="6dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_send"
+            android:hint="Type a message..."
+            android:background="#fff"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/btn_send"
+
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_send"
+            android:background="@drawable/ic_action_send"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

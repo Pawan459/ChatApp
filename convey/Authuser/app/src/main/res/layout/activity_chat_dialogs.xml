@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatDialogsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_dialog_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/navbarstyle"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_sort_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convey"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:background="#506CEF"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:layout_marginLeft="180dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chat_dialog_toolbar"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstchatdialogs"
+        android:background="@drawable/chatbackground">
+    </ListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chatdialog_adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="#506CEF"
+        app:layout_anchor="@id/lstchatdialogs"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+
+
+</RelativeLayout>

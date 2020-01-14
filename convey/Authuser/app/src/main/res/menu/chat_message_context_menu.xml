@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chat_message_update_message"
+        android:title="Update"/>
+    <item
+        android:id="@+id/chat_message_delete_message"
+        android:title="Delete"/>
+    <item
+        android:id="@+id/chat_message_spam_message"
+        android:title="Spam"/>
+    <item
+        android:id="@+id/chat_message_inappropriate"
+        android:title="Inappropriate"/>
+    <item
+        android:id="@+id/chat_message_useful"
+        android:title="Useful"/>
+
+
+</menu>

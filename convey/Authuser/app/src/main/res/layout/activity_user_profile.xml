@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:background="@drawable/chatbackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_update_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/navbarstyle"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:background="#506CEF"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_user"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_edt_old_password"
+                android:hint="Enter Old Password"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/holo_blue_bright"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_edt_password"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/holo_blue_bright"
+                android:hint="Enter New Password"
+                android:inputType="textPassword"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_edt_full_name"
+                android:textColorHint="@android:color/holo_blue_bright"
+                android:textColor="@color/colorPrimary"
+                android:hint="Enter Full Name"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/holo_blue_bright"
+                android:id="@+id/update_edt_email"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your Email"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/holo_blue_bright"
+                android:id="@+id/update_edt_phone"
+                android:hint="Enter Your Phone Number"
+                android:inputType="number"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/update_btn_update"
+            android:text="Update Profile"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/colorAccent"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/update_btn_cancel"
+            android:text="Cancel"
+            android:background="@drawable/btnstyle"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
